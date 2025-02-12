@@ -1,0 +1,23 @@
+read fname: merged_dem
+# Parameters for hillshade
+write_hillshade: true
+# Basins
+minimum_basin_size_pixels: 100000
+maximum_basin_size_pixels: 9999000000
+threshold_contributing_pixels: 50000
+print_basin_raster: true
+get_basins_from_outlets: true
+basin_outlet_csv: outlets.csv
+search_radius_nodes: 3
+find_complete_basins_in_window: false
+# Parameters for drainage area
+carve_before_fill: true
+print_chi_data_maps: true
+print_segmented_M_chi_map_to_csv: true
+m_over_n: 0.45
+extend_channel_to_node_before_receiver_junction: false
+# Parameters for just channel network and junctions
+print_channels_to_csv: true
+print_junctions_to_csv: true
+#end of file
+(END)
